@@ -1,0 +1,28 @@
+import React from "react";
+import "../style/first.css";
+import Button from "react-bootstrap/Button";
+import { Link, useNavigate } from "react-router-dom";
+
+function First(props) {
+  const navigate = useNavigate();
+  return (
+    <div className="container">
+      <div className="first_container">
+        <p>
+          빵<br />길<br />인<br />생
+        </p>
+        <div className="first_button_content_wrap">
+          <Button
+            onClick={() => {
+              navigate("/login");
+            }}
+            variant="outline-warning"
+          >
+            로그인
+          </Button>{" "}
+        </div>
+      </div>
+    </div>
+  );
+}
+export default First;

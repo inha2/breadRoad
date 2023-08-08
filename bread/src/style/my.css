@@ -1,0 +1,42 @@
+.my_container {
+  display: flex;
+  width: 1000px;
+  height: 100vh;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.my_container_wrap {
+  display: flex;
+  width: 334px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+.my_bang {
+  display: flex;
+  width: 179px;
+  height: 63px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #ffeacc;
+}
+.my_bang_zip {
+  display: flex;
+  width: 99px;
+  height: 113px;
+  padding: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #000;
+}
