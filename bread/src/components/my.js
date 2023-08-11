@@ -9,7 +9,7 @@ function My(props) {
       <div className="my_container">
         <div className="my_container_wrap">
           <p>인하님</p>
-          <Button variant="outline-warning">로그아웃</Button>{" "}
+          <Button onClick={()=>{navigate("/")}} variant="outline-warning">로그아웃</Button>{" "}
         </div>
         <div className="my_bang">
           <p>빵집보관함</p>

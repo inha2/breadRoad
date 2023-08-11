@@ -2,6 +2,8 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import { Link, useNavigate } from "react-router-dom";
 import "../style/honey.css";
+//빵맛집 대표이미지 설정해서 맛집을 대표함
+//
 function Honey(props) {
   const navigate = useNavigate();
   return (

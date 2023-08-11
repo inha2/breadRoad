@@ -4,7 +4,17 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import "../style/login.css";
 import Button from "react-bootstrap/Button";
-function SignUP() {
+import { useNavigate } from "react-router-dom";
+function SignUP(props) {
+  const navigate = useNavigate();
+  const handleSignUp = () => {
+    // 여기에 실제 회원가입 로직을 추가하고 완료 시 실행되는 코드를 작성합니다.
+    // 예: 회원가입이 성공하면 알림을 띄우고 로그인 페이지로 이동합니다.
+    alert("회원가입이 완료되었습니다!");
+    navigate("/login");
+  };
+//변수를 만들어 이메일,비밀번호 담음
+//이메일,비밀번호 형식에 맞게 안나오면 오류메시지 뜸
   return (
     <div className="container">
       <div className="login_container">
@@ -32,7 +42,7 @@ function SignUP() {
           </Form>
         </div>
         <div className="login_button_content_wrap">
-          <Button variant="outline-warning">가입하기</Button>{" "}
+          <Button onClick={handleSignUp} variant="outline-warning">가입하기</Button>{" "}
         </div>
       </div>
     </div>

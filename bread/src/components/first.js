@@ -2,7 +2,7 @@ import React from "react";
 import "../style/first.css";
 import Button from "react-bootstrap/Button";
 import { Link, useNavigate } from "react-router-dom";
-
+//버튼을 누르면 로그인페이지로 넘어감
 function First(props) {
   const navigate = useNavigate();
   return (
