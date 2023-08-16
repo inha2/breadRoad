@@ -9,22 +9,39 @@ function My(props) {
       <div className="my_container">
         <div className="my_container_wrap">
           <p>인하님</p>
-          <Button onClick={()=>{navigate("/")}} variant="outline-warning">로그아웃</Button>{" "}
+          <Button
+            onClick={() => {
+              navigate("/login");
+            }}
+            variant="outline-warning"
+          >
+            로그아웃
+          </Button>{" "}
         </div>
         <div className="my_bang">
           <p>빵집보관함</p>
         </div>
         <div className="my_bang_zip">
-              <p>zang</p>
+          <img
+            onClick={() => {
+              navigate("/bread/런던베이글(안국)");
+            }}
+            src={require("../image/런던베이글.jpeg")}
+          />
         </div>
         <div className="my_bang_zip">
-              <p>zang</p>
+          <img
+            onClick={() => {
+              navigate("/bread/성심당");
+            }}
+            src={require("../image/성심당2.jpeg")}
+          />
         </div>
         <div className="my_bang_zip">
-              <p>zang</p>
+          <p></p>
         </div>
         <div className="my_bang_zip">
-              <p>zang</p>
+          <p></p>
         </div>
         <div className="footer">
           <svg
@@ -51,7 +68,7 @@ function My(props) {
           </svg>
           <svg
             onClick={() => {
-              navigate("/honey");
+              navigate("/honeyzip");
             }}
             xmlns="http://www.w3.org/2000/svg"
             width="30"

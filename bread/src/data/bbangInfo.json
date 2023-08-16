@@ -1,0 +1,230 @@
+[
+  {
+    "name": "동네빵집",
+    "address": "경기 광주시 역동로 90-1 동네빵집",
+    "storeOpenDt": "월~토 7:30~11:00",
+    "storeDetailInfo": "전제품 소1진시 영업시간보다 일찍 조기종료 될 수 있음!",
+    "storeBreadDetailInfo": "마늘버터빵,슈크림빵,고로케,소금빵 음료 판매중",
+    "mainImage": "동네빵집.jpeg",
+    "images": [
+      {
+        "imageUrl": "동네빵집2.jpeg"
+      },
+      {
+        "imageUrl": "동네빵집3.jpeg"
+      },
+      {
+        "imageUrl": "동네빵집4.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "바다까까",
+    "address": "서울 용산구 이태원로54길 68 지하1층 101호",
+    "storeOpenDt": "수요일 정기휴무, 12:00~18:00",
+    "storeDetailInfo": "직접 만드는 케이크와 구움과자 디저트 카페",
+    "storeBreadDetailInfo": "크럼블,파운드케이크,휘낭시에,치즈케이크",
+    "mainImage": "바다까까.jpeg",
+    "images": [
+      {
+        "imageUrl": "바다까까2.jpeg"
+      },
+      {
+        "imageUrl": "바다까까3.jpeg"
+      },
+      {
+        "imageUrl": "바다까까4.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "어거스트 올리브",
+    "address": "서울 송파구 위례성대로12길 31",
+    "storeOpenDt": "수~일 12:00~18:00",
+    "storeDetailInfo": "르꼬르동블루출신 셰프가 동서양의 다양한 식재료를 사용하여 만들어가는 베이커리",
+    "storeBreadDetailInfo": "휘낭시에,브라우니,쿠키,밀크티,라떼",
+    "mainImage": "어거스트올리브.jpeg",
+    "images": [
+      {
+        "imageUrl": "어거스트올리브2.jpeg"
+      },
+      {
+        "imageUrl": "어거스트올리브3.jpeg"
+      },
+      {
+        "imageUrl": "어거스트올리브4.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "성심당",
+    "address": "대전 중구 대종로480번길 15",
+    "storeOpenDt": "매일 8:00~22:00",
+    "storeDetailInfo": "대전 대표 빵집",
+    "storeBreadDetailInfo": "튀김소보로,판타롱부추빵,전설의팥빙수,보문산메아리",
+    "mainImage": "성심당.jpeg",
+    "images": [
+      {
+        "imageUrl": "성심당2.jpeg"
+      },
+      {
+        "imageUrl": "성심당3.jpeg"
+      },
+      {
+        "imageUrl": "성심당4.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "런던베이글(안국)",
+    "address": "서울 종로구 북촌로4길 20",
+    "storeOpenDt": "매일 8:00~18:00",
+    "storeDetailInfo": "국내 어디서에서도 맛볼 수 없었던 베이글",
+    "storeBreadDetailInfo": "브릭레인 샌드위치,감자치즈 베이글,소금빵 베이글,에브리띵 베이글",
+    "mainImage": "런던베이글.jpeg",
+    "images": [
+      {
+        "imageUrl": "런던베이글2.jpeg"
+      },
+      {
+        "imageUrl": "런던베이글3.jpeg"
+      },
+      {
+        "imageUrl": "런던베이글4.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "아베베 베이커리 서울",
+    "address": "서울 종로구 청계천로 201 1, 2, 3층",
+    "storeOpenDt": "매일 10:30~19:30",
+    "storeDetailInfo": "제주 로컬 맛집 서울에 오픈!",
+    "storeBreadDetailInfo": "조천 오메기 품은 단팥빵,우도 땅콩 크림 도너츠,산방산 고구마 크림 도너츠,사려니 크림 왕밤빵",
+    "mainImage": "아베베베이커리.jpeg",
+    "images": [
+      {
+        "imageUrl": "아베베베이커리2.jpeg"
+      },
+      {
+        "imageUrl": "아베베베이커리3.jpeg"
+      },
+      {
+        "imageUrl": "아베베베이커리4.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "어글리 베이커리",
+    "address": "서울 마포구 월드컵로13길 73 1층 어글리 베이커리",
+    "storeOpenDt": "수~일 12:00~21:00",
+    "storeDetailInfo": "망원시장 맛집",
+    "storeBreadDetailInfo": "말차 맘모스,감동의 대파빵,얼그레이 크림빵,흑임자 커스터드 팥빵",
+    "mainImage": "어글리베이커리.jpeg",
+    "images": [
+      {
+        "imageUrl": "어글리베이커리2.jpeg"
+      },
+      {
+        "imageUrl": "어글리베이커리3.jpeg"
+      },
+      {
+        "imageUrl": "어글리베이커리4.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "샹끄발레르",
+    "address": "인천 연수구 컨벤시아대로130번길 14",
+    "storeOpenDt": "매일 09:00~21:00",
+    "storeDetailInfo": "건강한 빵 맛집",
+    "storeBreadDetailInfo": "소금빵,바질소금빵,트러플소금빵,고르곤졸라소금빵",
+    "mainImage": "소금빵.jpeg",
+    "images": [
+      {
+        "imageUrl": "소금빵2.jpeg"
+      },
+      {
+        "imageUrl": "소금빵3.jpeg"
+      },
+      {
+        "imageUrl": "소금빵4.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "헤이스위디",
+    "address": "서울 송파구 송파대로 145 문정오벨리스크 상가1층 101호",
+    "storeOpenDt": "월~토 10:30~19:00",
+    "storeDetailInfo": "송파구 소금빵 맛집",
+    "storeBreadDetailInfo": "소금빵,클래식휘낭시에,소금피칸휘낭시에,오렌지얼그레이휘낭시에",
+    "mainImage": "헤이스위디.jpeg",
+    "images": [
+      {
+        "imageUrl": "헤이스위디2.jpeg"
+      },
+      {
+        "imageUrl": "헤이스위디3.jpeg"
+      },
+      {
+        "imageUrl": "헤이스위디4.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "솔티베이커리",
+    "address": "인천 연수구 먼우금로 96 1층 일부호",
+    "storeOpenDt": "화~일 11:00~21:00",
+    "storeDetailInfo": "인천 소금빵 맛집",
+    "storeBreadDetailInfo": "소금빵,깜빠뉴,식빵,치아바타",
+    "mainImage": "솔티베이커리.jpeg",
+    "images": [
+      {
+        "imageUrl": "솔티베이커리2.jpeg"
+      },
+      {
+        "imageUrl": "솔티베이커리3.jpeg"
+      },
+      {
+        "imageUrl": "솔티베이커리4.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "씨스터브레드",
+    "address": "서울 마포구 동교로52길 20-4 지층 102호",
+    "storeOpenDt": "수~일 12:00~20:00",
+    "storeDetailInfo": "홍대 소금빵 맛집",
+    "storeBreadDetailInfo": "연남동소금빵,감자식빵,탕종식빵,우유식빵",
+    "mainImage": "씨스터브레드.jpeg",
+    "images": [
+      {
+        "imageUrl": "씨스터브레드2.jpeg"
+      },
+      {
+        "imageUrl": "씨스터브레드3.jpeg"
+      },
+      {
+        "imageUrl": "씨스터브레드4.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "솔티베이커리",
+    "address": "인천 연수구 먼우금로 96 1층 일부호",
+    "storeOpenDt": "화~일 11:00~21:00",
+    "storeDetailInfo": "인천 소금빵 맛집",
+    "storeBreadDetailInfo": "소금빵,깜빠뉴,식빵,치아바타",
+    "mainImage": "솔티베이커리.jpeg",
+    "images": [
+      {
+        "imageUrl": "솔티베이커리2.jpeg"
+      },
+      {
+        "imageUrl": "솔티베이커리3.jpeg"
+      },
+      {
+        "imageUrl": "솔티베이커리4.jpeg"
+      }
+    ]
+  }
+]

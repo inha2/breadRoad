@@ -32,11 +32,18 @@
   display: flex;
   width: 99px;
   height: 113px;
-  padding: 10px;
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
   flex-shrink: 0;
   border-radius: 20px;
   border: 1px solid #000;
+}
+.my_bang_zip img {
+  width: 99px;
+  height: 113px;
+  border-radius: 20px;
+}
+.info-window {
+  border-radius: 20px;
 }
