@@ -55,7 +55,7 @@ function Bread() {
         <div className="footer">
           <svg
             onClick={() => {
-              navigate("/");
+              navigate("/main");
             }}
             xmlns="http://www.w3.org/2000/svg"
             width="30"

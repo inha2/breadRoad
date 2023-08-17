@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  flex-direction: column;
 }
 .login_container_login {
   display: flex;
@@ -18,6 +19,8 @@
   flex-shrink: 0;
   border-radius: 20px;
   background: #ffeacc;
+  font-size: 20px;
+  margin: 10px;
 }
 .login_container_info {
   display: flex;

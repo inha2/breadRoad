@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  flex-direction: column;
 }
 .my_container_wrap {
   display: flex;
@@ -13,8 +14,10 @@
   padding: 10px;
   justify-content: space-between;
   align-items: center;
-  border-radius: 20px;
-  border: 1px solid black;
+  text-align: center;
+}
+.my_container_wrap p {
+  margin-top: 10px;
 }
 .my_bang {
   display: flex;
@@ -23,17 +26,22 @@
   padding: 10px;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 10px;
   flex-shrink: 0;
   border-radius: 20px;
   background: #ffeacc;
+}
+.my_bang p {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 20px;
 }
 .my_bang_zip {
   display: flex;
   width: 99px;
   height: 113px;
   justify-content: center;
-  align-items: flex-start;
   gap: 10px;
   flex-shrink: 0;
   border-radius: 20px;
@@ -46,4 +54,9 @@
 }
 .info-window {
   border-radius: 20px;
+}
+.my_bang_zip_wrap {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
 }
