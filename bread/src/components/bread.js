@@ -33,24 +33,28 @@ function Bread() {
   return (
     <div className="container">
       <div className="bread_container">
-        <img src={require(`../image/${result.mainImage}`)} alt="" />
-        {/* <img src={require(`../image/${mainImage}`).default} alt="Image 1" /> */}
-        <div className="bread_info_img">
-          {result.images.map((item) => {
-            return <img src={require(`../image/${item.imageUrl}`)} alt="" />;
-          })}
-          {/* 
+        <div className="bread_container_wrap">
+          <img src={require(`../image/${result.mainImage}`)} alt="" />
+          {/* <img src={require(`../image/${mainImage}`).default} alt="Image 1" /> */}
+          <div className="bread_info_img">
+            {result.images.map((item) => {
+              return <img src={require(`../image/${item.imageUrl}`)} alt="" />;
+            })}
+            {/* 
           <img src={require("../image/동네빵집3.jpeg")} />
           <img src={require("../image/동네빵집4.jpeg")} /> */}
-        </div>
-        <div className="bread_info_text">
-          <strong>{name}</strong>
-          <button onClick={like}>❤️</button>
-          <p>{address}</p>
-          <p>상세정보</p>
-          <p>{storeOpenDt}</p>
-          <p>{storeDetailInfo}</p>
-          <p>{storeBreadDetailInfo}</p>
+          </div>
+          <div className="bread_info_text">
+            <div className="like_button">
+              <strong>{name}</strong>
+              <button onClick={like}>❤️</button>
+            </div>
+            <p>{address}</p>
+            <p>상세정보</p>
+            <p>{storeOpenDt}</p>
+            <p>{storeDetailInfo}</p>
+            <p>{storeBreadDetailInfo}</p>
+          </div>
         </div>
         <div className="footer">
           <svg

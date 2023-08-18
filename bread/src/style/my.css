@@ -6,15 +6,22 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  flex-direction: column;
+}
+.my_container_contents_wrap {
+  height: 100vh;
 }
 .my_container_wrap {
   display: flex;
-  width: 334px;
   padding: 10px;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 20px;
+}
+.my_container_account_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .my_container_wrap p {
   margin-top: 10px;
@@ -23,19 +30,17 @@
   display: flex;
   width: 179px;
   height: 63px;
-  padding: 10px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 10px;
   flex-shrink: 0;
   border-radius: 20px;
   background: #ffeacc;
 }
 .my_bang p {
-  margin-top: 10px;
   font-weight: 700;
   font-size: 20px;
+  margin: 0 auto;
 }
 .my_bang_zip {
   display: flex;
@@ -45,12 +50,12 @@
   gap: 10px;
   flex-shrink: 0;
   border-radius: 20px;
-  border: 1px solid #000;
 }
 .my_bang_zip img {
   width: 99px;
   height: 113px;
   border-radius: 20px;
+  border: 1px solid black;
 }
 .info-window {
   border-radius: 20px;

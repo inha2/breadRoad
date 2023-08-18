@@ -21,7 +21,29 @@ function SignUP(props) {
   const navigate = useNavigate();
   const [email, setEmail] = useState(""); // 이메일 상태 변수
   const [password, setPassword] = useState(""); // 비밀번호 상태 변수
+  const [emailError, setEmailError] = useState(""); // 이메일 오류 상태 변수
+  const [passwordError, setPasswordError] = useState(""); // 비밀번호 오류 상태 변수
+  const handleEmailChange = (e) => {
+    const newEmail = e.target.value;
+    setEmail(newEmail);
+    setEmailError(newEmail === "" || validateEmail(newEmail) ? "" : "유효한 이메일 형식이 아닙니다.");
+  };
+
+  const handlePasswordChange = (e) => {
+    const newPassword = e.target.value;
+    setPassword(newPassword);
+    setPasswordError(newPassword === "" || validatePassword(newPassword) ? "" : "비밀번호는 6자 이상이어야 합니다.");
+  };
   const handleSignUp = () => {
+    const isEmailValid = validateEmail(email);
+    const isPasswordValid = validatePassword(password);
+
+    if (!isEmailValid || !isPasswordValid) {
+      // 형식이 맞지 않는 경우 각각의 상태 변수를 업데이트하고 리턴
+      setEmailError(isEmailValid ? null : "유효한 이메일 형식이 아닙니다.");
+      setPasswordError(isPasswordValid ? null : "비밀번호는 6자 이상이어야 합니다.");
+      return;
+    }
     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
@@ -32,9 +54,16 @@ function SignUP(props) {
       })
       .catch((error) => {
         // 회원가입 실패 시 에러 메시지를 출력하거나 예외 처리
-        console.error("SignUp error:", error);
-        alert("회원가입에 실패했습니다.")
+        console.error("SignUp error:", error.code);
+        alert("회원가입에 실패했습니다.");
       });
+  };
+  const validateEmail = (inputEmail) => {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(inputEmail);
+  };
+  const validatePassword = (inputPassword) => {
+    return inputPassword.length >= 6;
   };
   return (
     <div className="container">
@@ -52,9 +81,13 @@ function SignUP(props) {
                 <Form.Control
                   type="email"
                   placeholder="email@example.co.kr"
-                  value={email} // 입력값을 상태 변수에 바인딩
-                  onChange={(e) => setEmail(e.target.value)} // 입력값 변경 시 상태 변수 업데이트
+                  value={email}
+                  onChange={handleEmailChange}
+                  isInvalid={emailError !== ""} // 이메일 오류 상태에 따라 스타일 변경
                 />
+                <Form.Control.Feedback type="invalid">
+                  {emailError} {/* 이메일 오류 메시지 표시 */}
+                </Form.Control.Feedback>
               </Col>
             </Form.Group>
             <Form.Group as={Row} className="mb-3" controlId="formPlaintextPassword">
@@ -65,9 +98,13 @@ function SignUP(props) {
                 <Form.Control
                   type="password"
                   placeholder="비밀번호를 입력하세요"
-                  value={password} // 입력값을 상태 변수에 바인딩
-                  onChange={(e) => setPassword(e.target.value)} // 입력값 변경 시 상태 변수 업데이트
+                  value={password}
+                  onChange={handlePasswordChange}
+                  isInvalid={passwordError !== ""} // 비밀번호 오류 상태에 따라 스타일 변경
                 />
+                <Form.Control.Feedback type="invalid">
+                  {passwordError} {/* 비밀번호 오류 메시지 표시 */}
+                </Form.Control.Feedback>
               </Col>
             </Form.Group>
           </Form>
@@ -75,6 +112,14 @@ function SignUP(props) {
         <div className="login_button_content_wrap">
           <Button onClick={handleSignUp} variant="outline-warning">
             가입하기
+          </Button>{" "}
+          <Button
+            onClick={() => {
+              navigate("/login");
+            }}
+            variant="outline-warning"
+          >
+            뒤로가기
           </Button>{" "}
         </div>
       </div>

@@ -49,19 +49,18 @@ function Main() {
       // map: map,
       // position: new kakao.maps.LatLng(item.lat, item.lng),
       // content: content,
-      // yAnchor: 1 
+      // yAnchor: 1
       // });
-
 
       // 클릭시 페이지 이동
       kakao.maps.event.addListener(marker, "click", () => {
-        console.log(marker)
+        console.log(marker);
         // infowindow.open(map, marker);
         const clickedPosition = marker.getPosition(); // Get the clicked marker's position
         console.log("Clicked Marker Position:", item.name);
         navigate(`/bread/${item.name}`);
       });
-      return { marker};
+      return { marker };
     });
 
     setMarkers(createdMarkers);
@@ -76,7 +75,7 @@ function Main() {
   }, []);
 
   const handleOnKeyPress = async (e) => {
-    console.log(e.target.value.trim())
+    console.log(e.target.value.trim());
     if (e.key === "Enter" && e.target.value.trim() !== "") {
       const searchStore = breadData.find((item) => item.name === e.target.value);
       if (searchStore) {
@@ -91,9 +90,20 @@ function Main() {
   return (
     <div className="container">
       <div className="main_container">
+        <div className="my_page">
+          <p>인하님</p>
+          <Button
+            onClick={() => {
+              navigate("/login");
+            }}
+            variant="outline-warning"
+          >
+            로그아웃
+          </Button>{" "}
+        </div>
         <div className="main_search">
           <input type="text" value={searchValue} onChange={(e) => setSearchValue(e.target.value)} onKeyPress={handleOnKeyPress} placeholder="빵집검색" />{" "}
-          <svg xmlns="http://www.w3.org/2000/svg" width="51" height="52" viewBox="0 0 51 52" fill="none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 51 52" fill="none">
             <path
               d="M37.1936 33.4715C40.2195 29.2598 41.5748 24.038 40.9883 18.8509C40.4018 13.6637 37.9168 8.89372 34.0304 5.49518C30.144 2.09664 25.1428 0.32019 20.0275 0.521236C14.9121 0.722282 10.0598 2.886 6.44134 6.5795C2.82285 10.273 0.705034 15.2239 0.511591 20.4417C0.318148 25.6595 2.06334 30.7594 5.39803 34.7211C8.73271 38.6828 13.411 41.2141 18.4968 41.8086C23.5827 42.4032 28.7011 41.017 32.828 37.9276H32.8249C32.9186 38.0551 33.0186 38.1762 33.1311 38.2941L45.1624 50.566C45.7483 51.1641 46.5432 51.5003 47.3722 51.5006C48.2012 51.5009 48.9963 51.1653 49.5827 50.5676C50.1691 49.9699 50.4987 49.1591 50.4989 48.3136C50.4992 47.468 50.1702 46.657 49.5842 46.0589L37.553 33.787C37.4413 33.6717 37.3211 33.5683 37.1936 33.4715ZM37.9999 21.2187C37.9999 23.5209 37.5553 25.8006 36.6916 27.9276C35.8278 30.0546 34.5618 31.9872 32.9658 33.6152C31.3698 35.2431 29.475 36.5344 27.3897 37.4155C25.3045 38.2965 23.0695 38.75 20.8124 38.75C18.5553 38.75 16.3203 38.2965 14.235 37.4155C12.1497 36.5344 10.255 35.2431 8.65898 33.6152C7.06297 31.9872 5.79695 30.0546 4.9332 27.9276C4.06944 25.8006 3.62488 23.5209 3.62488 21.2187C3.62488 16.5691 5.4357 12.11 8.65898 8.82224C11.8823 5.53449 16.254 3.68745 20.8124 3.68745C25.3708 3.68745 29.7425 5.53449 32.9658 8.82224C36.1891 12.11 37.9999 16.5691 37.9999 21.2187Z"
               fill="black"
